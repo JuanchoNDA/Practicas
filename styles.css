@@ -1,0 +1,58 @@
+body{
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+.caja{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: antiquewhite;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    border-style: double;
+}
+.Ingreso{
+    position: absolute;
+    top: 20%;
+}
+h1{position: absolute;
+    top: 5%;
+}
+.resultado{
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+.borrar{
+    position: absolute;
+    top: 28%;
+    right: 50%;
+    width: 19%;
+}
+.sumar{
+    position: absolute;
+    top: 40%;
+    left: 31%;
+    width: 19%;
+}
+.mult{
+    position: absolute;
+    top: 40%;
+    right: 31%;
+    width: 19%;
+}
+.dividir{
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    width: 19%;
+}
+.restar{
+    position: absolute;
+    top: 50%;
+    right: 31%;
+    width: 19%;
+}
