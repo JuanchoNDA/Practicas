@@ -1,48 +1,78 @@
+const btnPapel = document.getElementById("papel");
+const btnPiedra = document.getElementById("piedra");
+const btnTijera = document.getElementById("tijera");
 
-let Texto = document.getElementById("txt");
-const boton = document.getElementById("btn");
-const botonDel = document.getElementById("btnDel");
-const botonMult = document.getElementById("btnMult");
-const botonDiv = document.getElementById("btnDiv");
-const botonRes = document.getElementById("btnRes");
-let respuesta = document.getElementById("res");
+let pts = document.getElementById('puntos');
+let res = document.getElementById('resultado');
 
+let total = 0;
 
-let Suma = 0;
+btnPapel.addEventListener('click', function(){
+let maquinaP = Math.floor(Math.random() * 3) + 1;
 
+if(maquinaP == 1){
+total += 1;
+let resultado = total.toString();
+pts.textContent = "Puntos: " + resultado;
+res.textContent = "Piedra, ganaste.";
+}
 
-boton.addEventListener('click', function(){
-    TextoAINT = parseInt(Texto.value);
-    Suma += TextoAINT;
-    INTATexto = Suma.toString();
-    respuesta.textContent = "Resultado: " + INTATexto;
+else if(maquinaP == 2){
+    total -= 1;
+    let resultado = total.toString();
+    pts.textContent = "Puntos: " + resultado;
+    res.textContent = "Tijera, Perdiste";
+}
+
+else{
+    let resultado = total.toString();
+    pts.textContent = "Puntos: " + resultado;
+    res.textContent = "Papel, Empate";
+}
+
 });
 
+btnTijera.addEventListener('click', function(){
+let maquinaT = Math.floor(Math.random() * 3) + 1;
 
-botonMult.addEventListener('click', function(){
-    TextoAINT = parseInt(Texto.value);
-    Suma *= TextoAINT;
-    INTATexto = Suma.toString();
-    respuesta.textContent = "Resultado: " + INTATexto;
+if(maquinaT == 2){
+    total += 1;
+    let resultado = total.toString();
+    pts.textContent = "Puntos: " + resultado;
+    res.textContent = "Papel, ganaste";
+    }
+    else if(maquinaT == 2){
+        total -= 1;
+        let resultado = total.toString();
+        pts.textContent = "Puntos: " + resultado;
+        res.textContent = "Piedra, Perdiste";
+    }
+    
+    else{
+        let resultado = total.toString();
+        pts.textContent = "Puntos: " + resultado;
+        res.textContent = "Tijera, Empate";
+    }
 });
-
-
-botonDiv.addEventListener('click', function(){
-    TextoAINT = parseInt(Texto.value);
-    Suma /= TextoAINT;
-    INTATexto = Suma.toString();
-    respuesta.textContent = "Resultado: " + INTATexto;
-});
-
-botonRes.addEventListener('click', function(){
-    TextoAINT = parseInt(Texto.value);
-    Suma -= TextoAINT;
-    INTATexto = Suma.toString();
-    respuesta.textContent = "Resultado: " + INTATexto;
-});
-
-botonDel.addEventListener('click', function(){
-    Suma = 0;
-    INTATexto = Suma.toString();
-    respuesta.textContent = "Resultado: " + INTATexto;
-});
+btnPiedra.addEventListener('click', function(){
+    let maquinaP = Math.floor(Math.random() * 3) + 1;
+    
+    if(maquinaP == 2){
+        total += 1;
+        let resultado = total.toString();
+        pts.textContent = "Puntos: " + resultado;
+        res.textContent = "Tijera, ganaste";
+        }
+        else if(maquinaP == 2){
+            total -= 1;
+            let resultado = total.toString();
+            pts.textContent = "Puntos: " + resultado;
+            res.textContent = "Papel, Perdiste";
+        }
+        
+        else{
+            let resultado = total.toString();
+            pts.textContent = "Puntos: " + resultado;
+            res.textContent = "Piedra, Empate";
+        }
+    });

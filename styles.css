@@ -1,58 +1,41 @@
 body{
     height: 100vh;
+    background-color: rgb(255, 255, 255);
     display: flex;
     place-content: center;
     align-items: center;
 }
 .caja{
     position: relative;
-    width: 50%;
-    height: 50%;
-    background-color: antiquewhite;
+    background-color: grey;
     display: flex;
     place-content: center;
     align-items: center;
-    border-style: double;
+    width: 60vh;
+    height: 50vh;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
-.Ingreso{
+.paper{
+    height: 100px;
+}
+.sisors{
+    height: 100px;
+}
+.rock{
+    height: 100px;
+}
+h1{
+    position: absolute;
+    top: 2%;
+}
+h2{
     position: absolute;
     top: 20%;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
-h1{position: absolute;
-    top: 5%;
-}
-.resultado{
-    position: absolute;
-    top: 25%;
-    right: 30%;
-}
-.borrar{
-    position: absolute;
-    top: 28%;
-    right: 50%;
-    width: 19%;
-}
-.sumar{
-    position: absolute;
-    top: 40%;
-    left: 31%;
-    width: 19%;
-}
-.mult{
-    position: absolute;
-    top: 40%;
-    right: 31%;
-    width: 19%;
-}
-.dividir{
-    position: absolute;
-    top: 50%;
-    left: 31%;
-    width: 19%;
-}
-.restar{
-    position: absolute;
-    top: 50%;
-    right: 31%;
-    width: 19%;
+.b{
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }

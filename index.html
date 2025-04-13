@@ -3,33 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PSR game.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="caja" id="caja">
-        <h1>
-            Calculadora
-        </h1>
-        <input type="text" placeholder="Ingrese Numero:" id="txt" class="Ingreso">
-        <button id="btn" class="sumar">
-            Sumar
+    <div class="caja">
+        <H1 id="resultado"> Piedra, Papel o Tijera</H1>
+        <h2 id="puntos">Puntos: 0</h2>
+        <button class="b" id="papel">
+            <img src="depositphotos_663874746-stock-illustration-vertical-scroll-unrolled-old-papyrus.jpg" class="paper">
         </button>
-        <button id="btnDel" class="borrar">
-            Borrar
+        <button class="b" id="tijera">
+            <img src = "istockphoto-1043551106-170667a.jpg" class="sisors">
         </button>
-        <button id="btnMult" class="mult">
-            Multiplicar
+        <button class="b" id="piedra">
+            <img src= "OIP.jpeg" class="rock">
         </button>
-        <button id="btnDiv" class="dividir">
-            Dividir
-        </button>
-        <button id="btnRes" class="restar">
-            Restar
-        </button >
-        <p id="res" class="resultado">
-            Resultado: 0
-        </p>
     </div>
     <script src="script.js">
 
